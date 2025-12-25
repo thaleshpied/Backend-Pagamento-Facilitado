@@ -43,3 +43,13 @@ O planejamento macro está organizado nas seguintes fases:
 - Revisão geral do projeto
 - Propostas de melhorias arquiteturais
 - Entrega final
+
+
+## Arquitetura
+
+O projeto seguirá uma arquitetura em camadas conforme indicado abaixo:
+
+- **Controllers**: responsáveis por receber as requisições HTTP e delegar para os serviços
+- **Services**: camada responsável pelas regras de negócio e orquestração dos fluxos
+- **Models**: camada de persistência de dados
+- **Exceptions**: exceções de domínio para regras de negócio
